@@ -1,37 +1,33 @@
 @charset "utf-8";
 
 body { 
-	margin:0;
-	padding:0;
+  margin: 0;
+  padding: 0;
 }
 
 @font-face {
-  font-family:'RioGradnde'; 
-  src:url("../fonts/RioGrande.ttf");
+  font-family: 'Rio Grande';
+  src: url("../fonts/RioGrande.ttf");
+}
+
+@font-face {
+  font-family: 'Rio Grande';
+  src: url("../fonts/RioGrande-Bold.woff2"),
+       url("../fonts/RioGrande-Bold.woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'RocaOne-Rg';
-  src:url("../fonts/Roca Regular.ttf");
+  src: url("../fonts/RocaOne-Rg.woff2"),
+       url("../fonts/RocaOne-Rg.woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-@font-face {
-    font-family: 'Rio Grande';
-    src:url("../fonts/RioGrande-Bold.woff2")
-        url("../fonts/RioGrande-Bold.woff");
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'RocaOne-Rg';
-    src:url("../fonts/RocaOne-Rg.woff2")
-        url("../fonts/RocaOne-Rg.woff");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
 
                    /* HOME PAGE */
 
@@ -187,7 +183,7 @@ body {
 
 h1 {
 	
-	font-family: 'Rio Grande';
+	font-family:'Rio Grande';
 	color: #ffbd59;
 	font-size: 150px;
 	
@@ -957,11 +953,41 @@ a {
 		height: 1000px;
 	}
 	
-		.trigger{
-		
-		padding: 20px 22px;
-		margin-right: 10px;
-	}
+   .trigger {
+       padding: 15px;
+       width: 10px;
+       height: 10px;
+       background-size: contain;
+       margin-right: 15px;
+   }
+
+   .block {
+       width: 100%;
+       height: auto;
+       top: 0;
+       left: 0;
+       background-color: #ffbd59; /* Keep the dropdown visible */
+   }
+
+
+    .links {
+        width: 100%;         /* Full width */
+        height: 100vh;       /* Full height */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .links a {
+        font-size: 18px;     /* Adjust font size for smaller screens */
+        padding: 10px 20px;  /* Ensure clickable area is comfortable */
+    }
+
+
+	
 	.portrait{
 		padding: 0px;
 		margin-left: 0px;	
