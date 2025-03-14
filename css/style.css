@@ -6,7 +6,7 @@ body {
 }
 
 @font-face {
-  font-family: 'RioGrande-Bold';
+  font-family: 'RioGrande';
   src: url("../fonts/RioGrande.ttf");
 }
 
@@ -46,12 +46,6 @@ body {
   height:800px;  
 }
 
-.overlay {
-	
-	background-image:;
-	height:100%;
-	width:100%;
-}
 
 /* Media query for smaller screens */
 @media (max-width: 1150px) {
@@ -183,7 +177,7 @@ body {
 
 h1 {
 	
-	font-family:'Rio Grande';
+	font-family:'RioGrande', 'RioGrande-Bold';
 	color: #ffbd59;
 	font-size: 150px;
 	
@@ -199,7 +193,7 @@ p1 {
 
 h {
 	
-	font-family: 'Rio Grande';
+	font-family:'RioGrande', 'RioGrande-Bold';
 	color: #ffbd59;
 	font-size: 110px;
 	
@@ -953,40 +947,11 @@ a {
 		height: 1000px;
 	}
 	
-   .trigger {
-       padding: 15px;
-       width: 10px;
-       height: 10px;
-       background-size: contain;
-       margin-right: 15px;
-   }
-
-   .block {
-       width: 100%;
-       height: auto;
-       top: 0;
-       left: 0;
-       background-color: #ffbd59; /* Keep the dropdown visible */
-   }
-
-
-    .links {
-        width: 100%;         /* Full width */
-        height: 100vh;       /* Full height */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-        margin: 0;
-    }
-    
-    .links a {
-        font-size: 18px;     /* Adjust font size for smaller screens */
-        padding: 10px 20px;  /* Ensure clickable area is comfortable */
-    }
-
-
+		.trigger{
+		
+		padding: 10px 12px;
+		margin-right: 10px;
+	}
 	
 	.portrait{
 		padding: 0px;
@@ -1025,6 +990,15 @@ a {
 		font-size: 60px; 
 		line-height: 5rem; 
 	} 
+	
+	.map { 
+	width: 100%; 
+	height: 300px; 
+	margin-bottom: 20px; 
+	padding: 50px 0px 50px 0px;
+} 
+	
+	
 	.about-content { 
 		width: 100%; 
 		padding: 20px; 
