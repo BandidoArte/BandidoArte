@@ -6,12 +6,12 @@ body {
 }
 
 @font-face {
-  font-family: 'Rio Grande';
+  font-family: 'RioGrande-Bold';
   src: url("../fonts/RioGrande.ttf");
 }
 
 @font-face {
-  font-family: 'Rio Grande';
+  font-family: 'RioGrande-Bold';
   src: url("../fonts/RioGrande-Bold.woff2"),
        url("../fonts/RioGrande-Bold.woff");
   font-weight: bold;
