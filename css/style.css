@@ -292,16 +292,16 @@ p {
 
 .iframe-gallery{
       display:flex;
-      justify-content: center; /* Aligns the widget horizontally */
-      align-items: center;    /* Aligns the widget vertically */
-      padding: 60px 0;         /* Makes the container fill the viewport height */
-      margin: 0;              /* Removes default margin */
-      background-color: black; /* Optional: Adds a light background color */
+      justify-content: center;
+      align-items: center;    
+      padding: 60px 0;         
+      margin: 0;             
+      background-color: black; 
 }
 
   iframe {
-      width: 1200px; /* Matches the widget width */
-      max-width: 100%; /* Ensures responsiveness on smaller screens */
+      width: 1200px; 
+      max-width: 100%; 
     }
 
 
@@ -320,10 +320,8 @@ p {
 } 
 .screenshots img {
 	padding:6px;
-	display: inline-block; /* Remove any gap below images */ 
+	display: inline-block; 
 } 
-
-/* Screenshot stack responsive removed */ 
 
 .VIEW_MORE_button{
 	width: 100%;
@@ -408,7 +406,6 @@ a {
 }
 
 .footer-right p2 {
- 
  font-family: 'RocaOne-Rg';
  color: white;
  font-size: 15px;
@@ -509,7 +506,6 @@ a {
 } 
 
 .Artwork3 {
-	padding-bottom: 100px; 
 	height:auto;
 	display: flex; 
 	flex-wrap: wrap; 
@@ -524,7 +520,7 @@ a {
 } 
 .screenshots3 img {
 	padding:6px;
-	display: inline-block;
+	display: inline-block; 
 } 
 
 .social-links a { 
@@ -535,21 +531,17 @@ a {
 	color: #007BFF; 
 } 
 
-.banner {
-    background: black;
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    width: 100%;
-    height: auto; 
-	padding-bottom:60px;
-    box-sizing: border-box;
-	flex-wrap: wrap;
+.banner img{
+	height: 500px;
+	
 }
-
-.banner img {
-    padding: 8px;
-    display: inline-block; 
+.banner{
+ background-color: black;
+ justify-content: center;
+ gap: 20px;
+ padding:15px;
+ display:flex;
+ flex-wrap:wrap;
 }
 
 
@@ -615,7 +607,6 @@ a {
 	
 }
 
-
 .gallery {
 	background-color: black;
     display: flex;
@@ -626,7 +617,7 @@ a {
 }
 
 .gallery a {
-    width: calc(27.5% - 20px); /* Adjust for spacing */
+    width: calc(27.5% - 20px); 
     display: block;
     overflow: hidden;
 	margin-top: 10px;
@@ -802,6 +793,19 @@ a {
 	text-align: center;
 }
 	
+.banner {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center; 
+  }
+	
+.banner img {
+   padding-bottom: 40px;
+   max-width: 100%; 
+   height: auto; 
+  }
+	
 .screenshots{
 	padding: 0px;
 	margin-left: 0px;
@@ -836,6 +840,18 @@ a {
 .about-content img{
 	align-content: center
 }
+	
+.banner {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center; 
+  }
+.banner img {
+   padding-bottom: 40px;
+   max-width: 100%; 
+   height: auto; 
+  }
 	
 .screenshots{
 	padding: 0px;
@@ -922,8 +938,9 @@ h {
     text-align: center; 
   }
 .banner img {
+   padding-bottom: 40px;
    max-width: 80%; 
-    height: auto; 
+   height: auto; 
   }
 	
 .screenshots{
@@ -932,11 +949,16 @@ h {
 	text-align: center;
 }
 	
-.screenshots3{
-	padding: 0px;
-	margin-left: 0px;
-	text-align: center;
-}
+.screenshots3 {
+    padding: 0;
+    margin: 0 auto;
+    text-align: center; 
+  }
+.screenshots3 img{
+	max-width: 90%; 
+    height: auto;
+	padding-bottom: 80px;
+	}
 		
 h1 { 
 	font-size: 90px; 
@@ -1033,18 +1055,17 @@ h {
 }
 	
 .portrait img {
-    width: 95%; 
+    width: 90%; 
     height: auto; 
 }	
 	
 .banner {
-    width: 100%;
     padding: 0;
     margin: 0 auto;
     text-align: center; 
   }
 .banner img {
-   max-width: 95%; 
+   max-width: 90%; 
     height: auto; 
   }
 	
@@ -1055,13 +1076,14 @@ h {
     text-align: center; 
   }
 .screenshots img {
-    width: 95%; 
+    width: 90%; 
     height: auto; 
   }
 	
 .screenshots3 img {
-    width: 95%; 
-    height: auto; 
+    width: 90%; 
+    height: auto;
+	padding-bottom: 80px;
   }
 	
 .screenshots3 {
