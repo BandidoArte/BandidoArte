@@ -64,7 +64,7 @@ body {
   .hero-image {
     background: url("../images/IMG_3261 small copy.png"); 
     background-size: cover;
-    height:700px;
+    height:650px;
     background-repeat: no-repeat;
     background-position:top;
     background-color: black;
@@ -1028,15 +1028,6 @@ h {
 	list-style-type: none;
 	padding: 0; margin: 0;
 }
-.links a {
-	 position: static;
-	 color: black;
-	 margin-top:150px;
-     padding:5px;
-     font-family: "RocaOne-Rg";
-     display:block;
-        }
-	
 
 .footer{
 	height: 1000px;
@@ -1162,3 +1153,141 @@ h {
 		
 	}
 }
+
+@media only screen and (max-width: 400px) {
+	
+	.links {
+	width:100%;
+	height: 100vh;
+	position: fixed;
+	display:flex;
+	font-size: 30px;
+	flex-direction: column;
+	align-items: center;
+	list-style-type: none;
+	padding: 0; margin: 0;
+}
+
+.footer{
+	height: 1000px;
+	}
+	
+.trigger{
+	padding: 15px 17px;
+	margin-right: 3px;
+	margin-top:0;
+}
+	
+.portrait{
+	padding: 0px;
+	margin-left: 0px;	
+	text-align: center;
+}
+	
+.portrait img {
+    width: 90%; 
+    height: auto; 
+}	
+	
+.banner {
+    padding: 0;
+    margin: 0 auto;
+    text-align: center; 
+  }
+.banner img {
+   max-width: 90%; 
+    height: auto; 
+  }
+	
+.screenshots {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center; 
+  }
+.screenshots img {
+    width: 90%; 
+    height: auto; 
+  }
+	
+.screenshots3 img {
+    width: 90%; 
+    height: auto;
+	padding-bottom: 80px;
+  }
+	
+.screenshots3 {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center; 
+  }
+	
+h1 { 
+	font-size: 90px; 
+	line-height: 1rem; 
+} 
+p1 { 
+    font-size: 20px; 
+	} 
+	
+h { 
+	font-size: 60px; 
+	line-height: 5rem; 
+	} 
+	
+.map { 
+	width: 100%; 
+	height: 400px; 
+	margin-bottom: 20px; 
+	padding: 50px 0px 50px 0px;
+} 
+		
+.about-content { 
+	width: 100%; 
+	padding: 20px; 
+	margin-left: 0; 
+	margin-top: 20px; 
+} 
+	
+.footer-right {
+	width: 100%; 
+	padding: 20px; 
+	margin-left: 0px; 
+	margin-top: 20px; 
+	margin-right: 0px; 
+	text-align: center; 
+}
+	
+.footer-right p {
+	margin-left: 40px;
+}
+	
+.footer-right p2 {
+	display:block;
+}
+
+.footer-right img{
+	margin-left: 20px;
+}
+	
+.footer-left {
+	width: 100%; 
+	padding: 0px; 
+	margin-left: 0px; 
+	margin-top: 200px;
+	margin-right: 0px;
+	text-align: center;
+} 
+	
+.Contact2{
+	margin-left: 25px;
+	}
+
+.Contact, .VIEW_MORE, .Contact2 { 
+	font-size: 14px; 
+	padding: 5px;
+		
+	}
+}
+
