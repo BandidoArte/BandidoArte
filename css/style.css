@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 body { 
+  background-color: black;
   margin: 0;
   padding: 0;
 }
@@ -37,7 +38,7 @@ body {
 
 .hero-image {
   margin-left: 0px;
-  background:url("../images/hero_img.PNG");
+  background:url("../images/hero image 2.PNG");
   background-color: black;
   background-size:cover;
   background-repeat: no-repeat;
@@ -153,7 +154,7 @@ body {
 .links a {
 	        position: static;
 	        color: black;
-	        margin-top:150px;
+	        margin-top:120px;
             padding:5px;
             font-family: "RocaOne-Rg";
             display:block;
@@ -261,6 +262,7 @@ p {
 	
 }
 .portrait{
+ align-items: center;
  justify-content: center;
  gap: 20px;
  padding:15px;
@@ -428,6 +430,21 @@ a {
 	
 }
 
+.faqbutton {
+	margin-top: 50px;
+	font-family: 'RocaOne-Rg';
+	color: #ffbd59;
+	display: inline-block; 
+	padding: 10px 20px; 
+	background-color: rgba(0, 0, 0, 0.6);
+	border: 2px solid white;
+	text-align: center;  
+	border-radius: 5px; 
+	cursor: pointer; 
+	font-size: 16px;
+	
+}
+
 .overlay-contact-me {
 	
 	background-image:linear-gradient(rgba(1,1,2,0.70), black);
@@ -447,18 +464,51 @@ a {
 	
 }
 
+.faqbutton:hover {
+	border: 2px solid rgba(0,0,0,1.00);
+	background-color: #ffbd59; 
+	color: black;
+	transition: 0.3s;
+}
+
+.faqbutton:active {
+	background-color: white;
+	
+}
+
                     /* CONTACT PAGE */
 /*----------------------------------------------------*/
 
+.hero-text2 {
+	line-height: 2em;
+	padding-left:125px;
+	padding-top: 100px;
+}
+
 .hero-image-contact-me {
-  margin-left: 0px;
-  background:url("../images/contact-me-hero-image.png");
+  margin-top: 0px;
+  background:url("../images/IMG_3663 big.png");
   background-color: black;
-  background-size:cover;
+  background-size:contain;
+  background-repeat: no-repeat;
   background-position:bottom;
-  width: 100%;
-  height:800px;
-  position: relative;  
+  width:100%;
+  height:1900px;
+
+}
+
+.disclaimer{
+	
+	background-color: black;
+	align-content: center;
+	text-align: center;
+	padding: 20px;
+	height: 400px;
+}
+
+.disclaimer p1{
+	color:red;
+	font-size:20px;
 }
 
 .contact {
@@ -547,14 +597,39 @@ a {
 
 
 .footer1 {
-	height: 300px;
-	background-color: #ffbd59; 
+	background-image:url("../images/IMG_2499 1080.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 400px;
 	color:black; 
 	text-align: center; 
 	padding: 20px; 
 } 
+
+/* Media query for very small screens */
+@media (max-width: 768px) {
+  .footer1{
+    	background-image:url("../images/IMG_2499 780.jpg");
+		background-size: cover;
+		background-position: center;
+	}}
+
+@media (max-width: 480px) {
+	 .footer1 {
+    	background-image:url("../images/IMG_480.jpg");
+		background-size: cover;
+		background-position:center; 
+	}}
+
+@media (max-width: 400px) {
+	 .footer1 {
+    	background-image:url("../images/IMG_480.jpg");
+		background-size: cover;
+		background-position:center; 
+	}}
+
 .footer1 .social-icons { 
-	margin-top: 35px;
+	margin-top: 80px;
 	margin-bottom: 20px; 
 } 
 
@@ -660,12 +735,13 @@ a {
 }
 
 .close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    color: white;
-    font-size: 54px;
-    text-decoration: none;
+	position:absolute;
+	top: 50px;
+	left: 180px;
+	color: #ffbd59; 
+	font-size: 70px; 
+	text-decoration:none;
+    z-index: 10;
 }
 
 .hidden {
@@ -700,7 +776,7 @@ a {
 }
 
 .designs{
-	padding-top:60px;
+	padding-top:20px;
 	height: 100px;
 	background-color: black;
 	text-align: center;
@@ -738,7 +814,7 @@ a {
 .gallerydesignspace{
 	
 	width:auto;
-	height:100px;
+	height:300px;
 	background-color: black;
 }
 
@@ -764,20 +840,52 @@ a {
     max-height: 90%;
 }
 
+/*-------------FAQ-------------------------*/
 
-.close { 
-	position:static; 
-	margin-right: 10px;
-	margin-bottom: 600px; 
-	color: #ffbd59; 
-	font-size: 60px; 
-	text-decoration:none; }
+.faqhero{
+	
+	background-image:url("../images/IMG_3664 circle.png");
+	height: 800px;
+	background-color: black;
+    background-size: contain;
+	background-repeat: no-repeat;
+    background-position:center;
+    width: 100%;
+    position: relative;  
+}
+
+.faqhero h1{
+	margin-top:450px;
+	
+}
+
+
+.frequent{
+	 
+	text-align: center;
+	padding-top: 50px;
+}
+.frequent p{
+	
+	font-size:20px;
+}
+
+.questions {
+    height:1400px;	
+    padding-left: 200px;
+	padding-right: 200px;
+}
 
 
 
 /*----------------- MEDIA QUERIES------------- */ 
 
 @media (max-width: 1400px){
+	
+.hero-image-contact-me {
+	height:1600px;	
+		
+	}
 	
 .about-content {
 	width: 100%; 
@@ -828,6 +936,15 @@ a {
 
 
 @media (max-width: 1024px) {
+	
+	.hero-image-contact-me {
+	height:1400px;	
+		
+	}
+	
+	.close{
+		left:35px;
+	}
 
 .trigger{
 	padding: 30px 35px;
@@ -909,7 +1026,7 @@ h {
     text-align: center;
 } 
 	
-.Contact, .VIEW_MORE, .Contact2 { 
+.Contact, .VIEW_MORE, .Contact2 .faqbutton{ 
     font-size: 14px; 
 	padding: 5px;			
 }
@@ -921,6 +1038,19 @@ h {
 
 @media (max-width: 768px) { 
 	
+	.hero-image-contact-me {
+	height:900px;	
+		
+	}
+	
+	.close{
+		left:20px;
+	}
+	
+.disclaimer{
+	height:600px;
+		
+	}
 	
 .trigger{
 	padding: 20px 22px;
@@ -1010,7 +1140,7 @@ h {
 .Contact2{
 	margin-left: 25px;
 }	
-.Contact, .VIEW_MORE, .Contact2 { 
+.Contact, .VIEW_MORE, .Contact2 .faqbutton{ 
 	font-size: 14px; 
 	padding: 5px;	
 	}
@@ -1018,8 +1148,57 @@ h {
 
 @media only screen and (max-width: 480px) {
 	
-	.footer1 {
-    height: 350px;
+	.links a {
+		margin-top:90px;
+	}
+	
+	.faqhero h1{
+	margin-top:30px;
+	
+}
+	
+	.faqhero{
+		
+		height: 300px;
+	}	
+	
+	.questions{
+		
+	height: 1800px;
+	padding-left: 10px;	
+	padding-right: 10px;	
+	}	
+	
+	
+.hero-text2{
+	padding-left: 0px;
+	text-align: center;
+	padding-top: 50px;
+		
+	}
+	
+.hero-image-contact-me {
+	height:700px;	
+		
+	}
+	
+	.hero-image-contact-me {
+	height:600px;	
+		
+	}
+	
+	.close{
+		left:20px;
+	}
+	
+.disclaimer{
+	height:600px;
+		
+	}
+	
+.footer1 {
+    height: 400px;
+	align-items: center;
 }
 	
 	.hero-text{
@@ -1156,7 +1335,7 @@ h {
 	}
 
 	
-.Contact, .VIEW_MORE, .Contact2 { 
+.Contact, .VIEW_MORE, .Contact2 .faqbutton{ 
 	font-size: 14px; 
 	padding: 5px;
 		
@@ -1165,13 +1344,59 @@ h {
 
 @media only screen and (max-width: 400px) {
 	
+   .faqhero h1{
+	  margin-top:30px;
+	
+}
+	
+	.faqhero{
+		height: 300px;
+	}
+	
+	
+	.questions{
+	height: 1800px;
+	padding-left: 10px;	
+	padding-right: 10px;	
+	}
+	
+.hero-text2{
+	padding-left: 0px;
+	text-align: center;
+	padding-top: 30px;
+		
+	}
+	
+.hero-image-contact-me {
+	height:600px;	
+		
+	}
+	
+.gallerydesignspace{
+	width:auto;
+	height:100px;
+	background-color: black;
+	
+	}
+	
+.disclaimer{
+	height:600px;
+		
+	}
+	
 .footer1 {
-    height: 350px;
+    height: 400px;
+	align-items: center;
 }
 	
 .hero-text{
 	padding-left:25px;
 }
+	
+	.links a {
+		
+		margin-top:90px;
+	}
 	
 .links {
    width:100%;
@@ -1301,7 +1526,7 @@ h {
 	margin-left: 25px;
 	}
 
-.Contact, .VIEW_MORE, .Contact2 { 
+.Contact, .VIEW_MORE, .Contact2 .faqbutton{ 
 	font-size: 14px; 
 	padding: 5px;
 		
